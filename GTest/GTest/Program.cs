@@ -1,64 +1,44 @@
 ﻿using System;
-
-namespace GenericTest
+namespace ConsoleApplication6
 {
-
-    //일반화 클래스
-
-    class GTest<T>
+    class Stack1<T>
     {
-
-        internal void Print(T i)
-
+        int top = 0;
+        T[] ar = new T[10];
+        public void Push(T obj)
         {
-
-            Console.WriteLine(i);
-
+            ar[top] = obj;
+            top++;
         }
-
+        public T Pop()
+        {
+            top--;
+            return ar[top];
+        }
     }
 
-    //일반화 메소드
-
-    class GTest2
-
+    class StackTest
     {
-
-        internal void Print<T>(T i)
-
+        static void Main()
         {
+            Stack1<int> s1 = new Stack1<int>();
+            s1.Push(1);
+            s1.Push(2);
+            s1.Push(3);
+            Console.WriteLine(s1.Pop());
+            Console.WriteLine(s1.Pop());
+            Console.WriteLine(s1.Pop());
 
-            Console.WriteLine(i);
-
+            Stack1<string> s2 = new Stack1<string>();
+            s2.Push("1길동");
+            s2.Push("2길동");
+            s2.Push("3길동");
+            Console.WriteLine(s2.Pop());
+            Console.WriteLine(s2.Pop());
+            Console.WriteLine(s2.Pop());
         }
-
     }
-
-    class Program
-    {
-
-        static void Main(string[] args)
-        {
-
-            GTest<int> p1 = new GTest<int>();
-
-            p1.Print(9999);
-
-            GTest<string> p2 = new GTest<string>();
-
-            p2.Print("홍길동");
-
-
-
-            GTest2 g2 = new GTest2();
-
-            g2.Print<int>(1111);
-
-            g2.Print<string>("1길동");
-
-        }
-
-    }
-
 }
+
+
 
