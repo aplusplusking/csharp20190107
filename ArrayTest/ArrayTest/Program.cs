@@ -17,7 +17,7 @@ namespace ArrayTest
                 iArr[i] = r.Next(1, 10);
             }
             int sum = 0;
-            foreach (int i in iArr) 
+            foreach (int i in iArr)
             {
                 sum += i;
                 Console.Write(i + "");
@@ -25,6 +25,6 @@ namespace ArrayTest
             Console.WriteLine($"\n배열합은{sum}");
             Console.WriteLine($"\n배열합은{iArr.Sum()}");
         }
-        
+
     }
 }
