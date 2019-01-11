@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dsasjs", "dsasjs\dsasjs.csproj", "{D0E9A90B-BBF2-4E31-8BCB-D5DCC5CB556C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E9A90B-BBF2-4E31-8BCB-D5DCC5CB556C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E9A90B-BBF2-4E31-8BCB-D5DCC5CB556C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E9A90B-BBF2-4E31-8BCB-D5DCC5CB556C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E9A90B-BBF2-4E31-8BCB-D5DCC5CB556C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D6B7B4B-385D-4227-B575-4DE0B22559C3}
+	EndGlobalSection
+EndGlobal
